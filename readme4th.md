@@ -19,16 +19,16 @@ import numpy as np
 t=np.linspace(0,100) 
 这三行是设置初值以及迭代次数，迭代次数通过numpy内置函数定义引入
 
-from scipy.integrate import odeint 
-sol=odeint(A,v0,t) 
-print sol
-这三行是通过scipy内置函数odeint，对前面定义的函数A（在已设置初值与迭代次数下进行运算），最后输出结果。
-import matplotlib.pyplot as plt 
-plt.xlabel('time') 
-plt.ylabel('velocity') 
-plt.plot(t,sol,"r--") 
-plt.title('velocity&time') 
-plt.show() 
+from scipy.integrate import odeint    
+sol=odeint(A,v0,t)    
+print sol  
+这三行是通过scipy内置函数odeint，对前面定义的函数A（在已设置初值与迭代次数下进行运算），最后输出结果。  
+import matplotlib.pyplot as plt   
+plt.xlabel('time')   
+plt.ylabel('velocity')   
+plt.plot(t,sol,"r--")    
+plt.title('velocity&time')  
+plt.show()   
 上面六行是对matplotlib的画图设置及表达，分别是
 设置x轴表示时间
 设置y轴表示速度
