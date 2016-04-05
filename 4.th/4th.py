@@ -1,5 +1,9 @@
+print"input a"
+a=input()
+print"input b"
+b=input()
 def A(v,t):
-	dvdt=50-v
+	dvdt=a-b*v
 	return dvdt
 
 v0=233
