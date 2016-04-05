@@ -38,7 +38,7 @@
         设置时间速度一一对应的图像及绘图的颜色与格式
         设置绘图标题
         显示图像
-
+ ！[image](https://github.com/x-blossom/computationalphysics-2013301020024/blob/master/4th/figure_1.png)
  - **总结**
 
  - 学会定义函数
