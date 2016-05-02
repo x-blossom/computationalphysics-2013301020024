@@ -15,7 +15,7 @@
     　　１．对于单摆，最简单的模型即为不考虑空气阻力等外力，仅考虑重力的小角近似线性常微分运动方程，即为
            $$\frac{d^2\theta}{dt^2}=-{g\over l}\theta$$
 　　　　通过选取适当变量  $\omega$  使得
-              ![](http://latex.codecogs.com/gif.latex?\$$\frac{d\theta}{dt}=\omega$$）
+            $$\frac{d\theta}{dt}=\omega$$
 　　　　则可运用前面所学常微分方程求解知识进行求解。
 
     　　２．若考虑外力（含驱动力），则单摆运动方程为
