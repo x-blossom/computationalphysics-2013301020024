@@ -1,0 +1,40 @@
+from visual import*
+ball = sphere(pos=(0,4,0),radius=0.1, color=color.red)
+g=9.8
+B=0.00004
+S=0.00041
+omi=30
+ball.velocity.x=[]
+ball.velocity.y=[]
+ball.velocity.z=[]
+v=[]
+ball.x=[]
+ball.y=[]
+ball.z=[]
+ball.velocity.x.append(70)
+ball.velocity.y.append(20)
+ball.velocity.z.append(0)
+ball.x.append(0)
+ball.y.append(0)
+ball.z.append(0)
+dt=0.01
+for i in range (50000):
+        rate=100
+	v.append(((ball.velocity.x[-1])**2+(ball.velocity.y[-1])**2+(ball.velocity.z[-1])**2)**0.5)
+	x_app=ball.x[i]+ball.velocity.x[i]*dt
+	vx_app=ball.velocity.x[i]-B*ball.velocity.x[i]*v[i]*dt
+	ball.x.append(x_app)
+	ball.velocity.x.append(vx_app)
+	y_app=ball.y[i]+ball.velocity.y[i]*dt
+	vy_app=ball.velocity.y[i]-g**dt
+	ball.y.append(y_app)
+	ball.velocity.y.append(vy_app)
+	z_app=ball.z[i]+ball.velocity.z[i]*dt
+	vz_app=ball.velocity.z[i]-S*ball.velocity.x[i]*omi*dt	
+	ball.z.append(z_app)
+	ball.velocity.z.append(vz_app)
+	if ball.y[-1]<0:
+		break
+	else:
+		continue
+
