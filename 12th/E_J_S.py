@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import math as ma
 rate_Me=3.3*10**-7
-rate_Mj=9.5*10**-4*1000
+rate_Mj=9.5*10**-4*100
 dt=0.01
-ori=4.2*rate_Mj/(1+rate_Mj)
+ori=5.2*rate_Mj/(1+rate_Mj)
 def S_J_E(x1,y1,vx1,vy1,x2,y2,vx2,vy2,x3,y3,vx3,vy3):
 	ve_x=[]
 	ve_y=[]
@@ -68,5 +68,5 @@ S_J_E(1-ori,0,0,2*ma.pi,5.2-ori,0,0,0.86*ma.pi,-ori,0,0,-rate_Mj*0.86*ma.pi)
 plt.legend(loc='upper left')
 plt.xlabel('x /AU')
 plt.ylabel('y /AU')
-plt.text(-10,10,'Mass of Jupiter =1000 Mj')
+plt.text(-1,1.7,'Mass of Jupiter =100 Mj')
 plt.show()
