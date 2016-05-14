@@ -1,0 +1,28 @@
+import math as ma
+import matplotlib.pyplot as plt
+x=[]
+y=[]
+r=[]
+vx=[]
+vy=[]
+x.append(1)
+y.append(0)
+vx.append(0)
+vy.append(2*ma.pi)
+dt=0.002
+for i in range (1000):
+	r.append((x[i]**2+y[i]**2)**0.5)
+	vx_app=vx[i]-4*ma.pi**2*x[i]/(r[i])*dt
+	vx.append(vx_app)
+	x_app=x[i]+vx[i+1]*dt
+	x.append(x_app)
+	vy_app=vy[i]-4*ma.pi**2*y[i]/(r[i])*dt
+	vy.append(vy_app)
+	y_app=y[i]+vy[i+1]*dt
+	y.append(y_app)
+	
+plt.plot(x,y,'r--',label='earth')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(loc='upper right')
+plt.show()	
