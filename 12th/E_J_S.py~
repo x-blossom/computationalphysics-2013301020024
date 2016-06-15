@@ -29,7 +29,7 @@ def S_J_E(x1,y1,vx1,vy1,x2,y2,vx2,vy2,x3,y3,vx3,vy3):
 	vj_y.append(vy2)
 	vr_x.append(vx3)
 	vr_y.append(vy3)	
-	for i in range(26000):
+	for i in range(130000):
 		r_e=(xe[i]**2+ye[i]**2)**0.5
 		r_j=(xj[i]**2+yj[i]**2)**0.5
 		r_r=(xr[i]**2+yr[i]**2)**0.5
