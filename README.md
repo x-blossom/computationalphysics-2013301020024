@@ -11,3 +11,5 @@ repository for work
 - [x] [第十次作业](https://www.zybuluo.com/X-blossom/note/413921)
 - [x] [第十一次作业]
 - [x] [第十二次作业](https://www.zybuluo.com/X-blossom/note/377527)
+- [x] [第十三次作业]
+- [x] [第十四次作业]
