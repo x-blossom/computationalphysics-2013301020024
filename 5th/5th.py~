@@ -1,0 +1,20 @@
+print"input a"
+a=input()
+print"input b"
+b=input()
+def A(N,t):
+	dNdt=a*N-b*N**2
+	return dNdt
+
+N0=5000
+import numpy as np
+t=np.linspace(0,20)
+from scipy.integrate import odeint
+sol=odeint(A,N0,t)
+print sol
+import matplotlib.pyplot as plt
+plt.xlabel('time')
+plt.ylabel('population')
+plt.plot(t,sol,"b-*",linewidth=2)
+plt.title('population&time')
+plt.show()
